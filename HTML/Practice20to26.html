@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Khảo sát sinh viên Đại học Bách khoa Hà Nội</title>
+    </head>
+    <body>
+        <h1>Hãy trung thực khi làm bài khảo sát này nhé!</h1>
+        
+        <form action="/Home/freeCodeCamp/HTML/survey.txt">
+            <p>Bạn đã "tạch" môn bao giờ chưa?</p>
+            <label for="pass"><input id="pass" type="radio" name="pass-fail" value="pass" checked>Chưa từng</label><br>
+            <label for="fail"><input id="fail" type="radio" name="pass-fail" value="fail">Đã từng</label><br>
+            
+            <p>Nếu đã từng "tạch" môn, theo bạn nguyên nhân là gì?</p>
+            <label for="lazy"><input id="lazy" type="checkbox" name="reason" value="lazy">Do bản thân lười biếng</label><br>
+            <label for="difficult"><input id="difficult" type="checkbox" name="reason" value="difficult" checked>Do đề thi quá khó</label><br>
+            <label for="alotof"><input id="alotof" type="checkbox" name="reason" value="alotof" checked>Kiến thức môn học quá nhiều</label><br>
+            <label for="teacher"><input id="teacher" type="checkbox" name="reason" value="teacher">Phương pháp giảng dạy của giáo viên chưa phù hợp</label><br>
+            <label for="else"><input id="else" type="checkbox" name="reason" value="else" checked>Lý do khác</label><br>
+            <input type="text" placeholder="Nhập lý do khác"><br>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+</html>
