@@ -66,6 +66,17 @@
       .shadow::before {
         background-color: #F673A4;
       }
+      .big {
+        background-color: #F673A4;
+        transform: rotate(-45deg);
+        animation-name: big;
+      }
+      .big::after {
+        background-color:  #F673A4;
+      }
+      .big::before {
+        background-color:  #F673A4;
+      }
       @keyframes back {
         50% {
           background-color: #ffe6f2;
@@ -81,8 +92,15 @@
           transform: scale(0.6) rotate(-40deg)
         }
       }
+      @keyframes big {
+        100% {
+          transform: scale(3) rotate(-45deg);
+          opacity: 0;
+        }
+      }
     </style>
     <div class="back"></div>
+    <div class="heart big"></div>
     <div class="heart shadow"></div>
     <div class="heart"></div>
   </body>
